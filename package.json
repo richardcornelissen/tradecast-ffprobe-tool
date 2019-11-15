@@ -1,0 +1,29 @@
+{
+  "name": "tradecast-ffprobe-tool",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/richardcornelissen/tradecast-ffprobe-tool.git",
+  "author": "Richard Cornelissen <mail@richardcornelissen.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "yarn build --watch",
+    "lint": "",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.35",
+    "@types/bunyan": "^1.8.6",
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.7",
+    "aws-lambda": "^0.1.2",
+    "jest": "^24.9.0",
+    "serverless": "^1.57.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.572.0"
+  }
+}

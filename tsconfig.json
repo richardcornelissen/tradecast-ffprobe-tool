@@ -1,0 +1,29 @@
+{
+  "include": [
+      "src/**/*.ts"
+  ],
+  "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "rootDir": ".",
+      "sourceMap": true,
+      "outDir": "dist",
+      "allowJs": true,
+      "lib": [
+          "es5",
+          "es6",
+          "dom",
+          "es2015.core",
+          "es2015.collection",
+          "es2015.generator",
+          "es2015.iterable",
+          "es2015.promise",
+          "es2015.proxy",
+          "es2015.reflect",
+          "es2015.symbol",
+          "es2015.symbol.wellknown",
+          "esnext.asynciterable",
+          "es2016.array.include"
+      ]
+  }
+}

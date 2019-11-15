@@ -1,0 +1,25 @@
+service: FFProbeTool
+
+custom:
+  functionPrefix: ${self:service}-${self:provider.stage}
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  stage: ${opt:stage, 'dev'}
+  memorySize: 256
+  timeout: 30
+  versionFunctions: false
+  region: ${opt:region, 'eu-central-1'}
+
+package:
+ exclude:
+   - src/**
+   - yarn.lock
+   - node_modules/aws-sdk/**
+
+functions:
+  ffprobe:
+    handler: dist/functions/ffprobe/main.handler
+    name: ${self:custom.functionPrefix}-ffprobe
+
