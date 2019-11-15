@@ -5,6 +5,9 @@ module.exports = {
   testEnvironment: 'node',
   collectCoverage: true,
   testRegex: "(/__tests__/.*\\.test)\\.ts$",
+  setupFiles: [
+    "<rootDir>/__tests__/setup.ts"
+  ],
   transform: {
     "^.+\\.ts$": "ts-jest"
   },
@@ -15,7 +18,8 @@ module.exports = {
     "node"
   ],
   collectCoverageFrom: [
-    "src/**/*.{ts,js}"
+    "src/**/*.{ts,js}",
+    "!src/modules/FFProbe.ts",
   ],
   coverageReporters: ["text-summary", "lcov"],
   coverageThreshold: {

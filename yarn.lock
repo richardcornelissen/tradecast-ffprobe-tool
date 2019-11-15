@@ -138,6 +138,42 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@ffprobe-installer/darwin-x64@4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@ffprobe-installer/darwin-x64/-/darwin-x64-4.1.0.tgz#025c5108faf3e456e6a407dd65b798f8dcc805dd"
+  integrity sha512-ESwvOnbGVGK0r7bUdThSZAYipQOH0X79M4SoNZ5Tg77lq/RVbEdpObNEM2oRfLINbMlQQrezA4VYzt0n/DOkcQ==
+
+"@ffprobe-installer/ffprobe@^1.0.12":
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/@ffprobe-installer/ffprobe/-/ffprobe-1.0.12.tgz#0e2acf1e8ab3dfe7299efc23279473e158fdcaed"
+  integrity sha512-S7JYDNK9CYLrn+Cb/GFhPwXNPj2SgDSz3KGBSr4JbpZ6HRHS83DyNaehO39lBcjH6KBA3pnagJgtlkavgdNLkw==
+  optionalDependencies:
+    "@ffprobe-installer/darwin-x64" "4.1.0"
+    "@ffprobe-installer/linux-ia32" "4.1.0"
+    "@ffprobe-installer/linux-x64" "4.1.0"
+    "@ffprobe-installer/win32-ia32" "4.1.0"
+    "@ffprobe-installer/win32-x64" "4.1.0"
+
+"@ffprobe-installer/linux-ia32@4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@ffprobe-installer/linux-ia32/-/linux-ia32-4.1.0.tgz#50b5952927b8b1bc42c3f2edd788b995e8470d17"
+  integrity sha512-V2NeZpnly4HP1IU5IrsbbcRg8SWzC/SS0YDNSCjmhxGV2U8MUpW8c8KREE6nX56Dml8B8do5NNkTnaYCDPt3Xw==
+
+"@ffprobe-installer/linux-x64@4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@ffprobe-installer/linux-x64/-/linux-x64-4.1.0.tgz#b67c96748457677171ca31b0fb83e4bd3c644ab5"
+  integrity sha512-Id+irHoI+Arq6tb3sHNQyzRrgUVVDgbmwpREDqQ+GDydiCw5ca7VnvRGXE/tBM2mVQ3/6m9wWHR7+xaW3gKJlA==
+
+"@ffprobe-installer/win32-ia32@4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@ffprobe-installer/win32-ia32/-/win32-ia32-4.1.0.tgz#19cc6d1043f7e54c2764ada6af8f7f26f98bbad8"
+  integrity sha512-G1pbRfk7XDi9EioT0gSR+O4ARdppS9kSXRzhnJOojUFD6x1k8Qv27RoOXeE5DtIE7TdX6UTywj8qA1BXI5zUUA==
+
+"@ffprobe-installer/win32-x64@4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@ffprobe-installer/win32-x64/-/win32-x64-4.1.0.tgz#ed3e8a329eeb6c0625ac439e31ad9ec43001b33c"
+  integrity sha512-gPW2FZxexzCAOhGch0JFkeSSln+wcL5d1JDlJwfSJVEAShHf9MmxiWq0NpHoCSzFvK5qwl0C58KG180eKvd3mA==
+
 "@jest/console@^24.7.1", "@jest/console@^24.9.0":
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/@jest/console/-/console-24.9.0.tgz#79b1bc06fb74a8cfb01cbdedf945584b1b9707f0"
@@ -977,6 +1013,16 @@ builtin-modules@^3.1.0:
   resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-3.1.0.tgz#aad97c15131eb76b65b50ef208e7584cd76a7484"
   integrity sha512-k0KL0aWZuBt2lrxrcASWDfwOLMnodeQjodT/1SxEQAXsHANgo6ZC/VEaSEHCXt7aSTZ4/4H5LKa+tBXmW7Vtvw==
 
+bunyan@^1.8.12:
+  version "1.8.12"
+  resolved "https://registry.yarnpkg.com/bunyan/-/bunyan-1.8.12.tgz#f150f0f6748abdd72aeae84f04403be2ef113797"
+  integrity sha1-8VDw9nSKvdcq6uhPBEA74u8RN5c=
+  optionalDependencies:
+    dtrace-provider "~0.8"
+    moment "^2.10.6"
+    mv "~2"
+    safe-json-stringify "~1"
+
 cache-base@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/cache-base/-/cache-base-1.0.1.tgz#0a7f46416831c8b662ee36fe4e7c59d76f666ab2"
@@ -1560,6 +1606,13 @@ download@^5.0.3:
     got "^6.3.0"
     mkdirp "^0.5.1"
     pify "^2.3.0"
+
+dtrace-provider@~0.8:
+  version "0.8.8"
+  resolved "https://registry.yarnpkg.com/dtrace-provider/-/dtrace-provider-0.8.8.tgz#2996d5490c37e1347be263b423ed7b297fb0d97e"
+  integrity sha512-b7Z7cNtHPhH9EJhNNbbeqTcXB8LGFFZhq1PGgEvpeHlzd36bhbdTWoE/Ba/YguqpBSlAPKnARWhVlhunCMwfxg==
+  dependencies:
+    nan "^2.14.0"
 
 duplexer3@^0.1.4:
   version "0.1.4"
@@ -2176,6 +2229,17 @@ glob-parent@~5.1.0:
   integrity sha512-qjtRgnIVmOfnKUE3NJAQEdk+lKrxfw8t5ke7SXtfMTHcjsBfOfWXCQfdb30zfDoZQ2IRSIiidmjtbHZPZ++Ihw==
   dependencies:
     is-glob "^4.0.1"
+
+glob@^6.0.1:
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/glob/-/glob-6.0.4.tgz#0f08860f6a155127b2fadd4f9ce24b1aab6e4d22"
+  integrity sha1-DwiGD2oVUSey+t1PnOJLGqtuTSI=
+  dependencies:
+    inflight "^1.0.4"
+    inherits "2"
+    minimatch "2 || 3"
+    once "^1.3.0"
+    path-is-absolute "^1.0.0"
 
 glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@^7.1.1, glob@^7.1.2, glob@^7.1.3:
   version "7.1.6"
@@ -3595,7 +3659,7 @@ mimic-response@^1.0.0, mimic-response@^1.0.1:
   resolved "https://registry.yarnpkg.com/mimic-response/-/mimic-response-1.0.1.tgz#4923538878eef42063cb8a3e3b0798781487ab1b"
   integrity sha512-j5EctnkH7amfV/q5Hgmoal1g2QHFJRraOtmx0JpIqkxhBhI/lJSl1nMpQ45hVarwNETOoWEimndZ4QK0RHxuxQ==
 
-minimatch@^3.0.2, minimatch@^3.0.4:
+"minimatch@2 || 3", minimatch@^3.0.2, minimatch@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
   integrity sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
@@ -3640,14 +3704,14 @@ mixin-deep@^1.2.0:
     for-in "^1.0.2"
     is-extendable "^1.0.1"
 
-mkdirp@0.x, mkdirp@^0.5.0, mkdirp@^0.5.1:
+mkdirp@0.x, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
   dependencies:
     minimist "0.0.8"
 
-moment@^2.24.0:
+moment@^2.10.6, moment@^2.24.0:
   version "2.24.0"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
   integrity sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
@@ -3667,7 +3731,16 @@ mute-stream@0.0.7:
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
   integrity sha1-MHXOk7whuPq0PhvE2n6BFe0ee6s=
 
-nan@^2.12.1:
+mv@~2:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/mv/-/mv-2.1.1.tgz#ae6ce0d6f6d5e0a4f7d893798d03c1ea9559b6a2"
+  integrity sha1-rmzg1vbV4KT32JN5jQPB6pVZtqI=
+  dependencies:
+    mkdirp "~0.5.1"
+    ncp "~2.0.0"
+    rimraf "~2.4.0"
+
+nan@^2.12.1, nan@^2.14.0:
   version "2.14.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.0.tgz#7818f722027b2459a86f0295d434d1fc2336c52c"
   integrity sha512-INOFj37C7k3AfaNTtX8RhsTw7qRy7eLET14cROi9+5HAVbbHuIWUHEauBv5qT4Av2tWasiTY1Jw6puUNqRJXQg==
@@ -3716,6 +3789,11 @@ ncjsm@^4.0.1:
     find-requires "^1.0.0"
     fs2 "^0.3.6"
     type "^2.0.0"
+
+ncp@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/ncp/-/ncp-2.0.0.tgz#195a21d6c46e361d2fb1281ba38b91e9df7bdbb3"
+  integrity sha1-GVoh1sRuNh0vsSgbo4uR6d9727M=
 
 needle@^2.2.1:
   version "2.4.0"
@@ -4542,6 +4620,13 @@ rimraf@^2.2.8, rimraf@^2.5.4, rimraf@^2.6.1, rimraf@^2.6.3:
   dependencies:
     glob "^7.1.3"
 
+rimraf@~2.4.0:
+  version "2.4.5"
+  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.4.5.tgz#ee710ce5d93a8fdb856fb5ea8ff0e2d75934b2da"
+  integrity sha1-7nEM5dk6j9uFb7Xqj/Di11k0sto=
+  dependencies:
+    glob "^6.0.1"
+
 rsvp@^4.8.4:
   version "4.8.5"
   resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-4.8.5.tgz#c8f155311d167f68f21e168df71ec5b083113734"
@@ -4570,6 +4655,11 @@ safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
   integrity sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
+
+safe-json-stringify@~1:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/safe-json-stringify/-/safe-json-stringify-1.2.0.tgz#356e44bc98f1f93ce45df14bcd7c01cda86e0afd"
+  integrity sha512-gH8eh2nZudPQO6TytOvbxnuhYBOvDBBLW52tz5q6X58lJcd/tkmqFR+5Z9adS8aJtURSXWThWy/xJtJwixErvg==
 
 safe-regex@^1.1.0:
   version "1.1.0"

@@ -5,7 +5,7 @@
   "compilerOptions": {
       "target": "es6",
       "module": "commonjs",
-      "rootDir": ".",
+      "rootDir": "src",
       "sourceMap": true,
       "outDir": "dist",
       "allowJs": true,
