@@ -17,7 +17,7 @@ describe('functions', () => {
         expect(result).toBeFalsy();
         expect(error).toBeTruthy();
         expect(error).toBeInstanceOf(Error);
-        expect((error as Error).message).toEqual('[400] Missing url in input');
+        expect((error as Error).message).toEqual('[400] data should be object');
       });
 
       it('Should handle invalid event', () => {
@@ -36,7 +36,26 @@ describe('functions', () => {
         expect(result).toBeFalsy();
         expect(error).toBeTruthy();
         expect(error).toBeInstanceOf(Error);
-        expect((error as Error).message).toEqual('[400] Invalid url in input');
+        expect((error as Error).message).toEqual('[400] data.url should be string');
+      });
+
+      it('Should handle invalid url', () => {
+        const event = {
+          url: 'fake://path/to/something',
+        };
+
+        let result;
+        let error: Error | string;
+
+        handler(event, {} as Context, (err, res) => {
+          error = err;
+          result = res;
+        });
+
+        expect(result).toBeFalsy();
+        expect(error).toBeTruthy();
+        expect(error).toBeInstanceOf(Error);
+        expect((error as Error).message.startsWith('[400] data.url should match pattern')).toBeTruthy();
       });
 
       it('Should handle valid event', () => {
