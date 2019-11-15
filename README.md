@@ -1,6 +1,14 @@
 # tradecast-ffprobe-tool
 TradeCast NodeJs test assignment by Richard Cornelissen
 
+## Getting started
+Clone repository and run the following commands:
+```
+yarn
+yarn test
+yarn dev
+```
+
 ## Local invocation
 Run the following command to invoke ffprobe locally
 ```
